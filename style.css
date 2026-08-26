@@ -1,0 +1,242 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background: #f4f1eb;
+    color: #222;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+/* ===== МЕНЮ ===== */
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: #202020;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.2);
+}
+
+nav {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5px;
+    padding: 10px 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: 0.25s;
+}
+
+nav a:hover {
+    background: #a88755;
+}
+
+/* ===== ГЛАВНЫЙ ЭКРАН ===== */
+
+.hero {
+    min-height: 520px;
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(135deg, #e8e1d5, #ffffff);
+}
+
+/* ФОТОГРАФИЯ */
+
+.portrait {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid white;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.18);
+    margin-bottom: 20px;
+}
+
+/* ИМЯ */
+
+.hero h1 {
+    margin: 0;
+    max-width: 900px;
+    font-size: 38px;
+    line-height: 1.2;
+    color: #202020;
+}
+
+/* ДОЛЖНОСТЬ */
+
+.hero p {
+    max-width: 700px;
+    margin-top: 15px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #666;
+}
+
+/* ===== ОСНОВНОЙ ТЕКСТ ===== */
+
+main {
+    max-width: 1000px;
+    margin: 45px auto;
+    padding: 0 20px;
+}
+
+section:not(.hero) {
+    background: white;
+    margin-bottom: 30px;
+    padding: 35px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+}
+
+/* ВСЕ ОСНОВНЫЕ ЗАГОЛОВКИ */
+
+h2 {
+    margin-top: 0;
+    margin-bottom: 22px;
+    padding-bottom: 9px;
+    border-bottom: 2px solid #a88755;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 27px;
+    line-height: 1.3;
+    color: #222;
+}
+
+/* ПОДЗАГОЛОВКИ */
+
+h3 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 20px;
+    line-height: 1.4;
+    margin-top: 28px;
+}
+
+/* ВЕСЬ ОБЫЧНЫЙ ТЕКСТ ОДИНАКОВЫЙ */
+
+p {
+    margin: 0 0 16px 0;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+/* СПИСКИ */
+
+ul,
+ol {
+    padding-left: 28px;
+}
+
+li {
+    margin-bottom: 10px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+ol li::marker {
+    color: #a88755;
+    font-weight: bold;
+}
+
+/* ВЫДЕЛЕННЫЙ БЛОК */
+
+.highlight {
+    margin: 22px 0;
+    padding: 18px 22px;
+    border-left: 4px solid #a88755;
+    background: #f7f4ee;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+/* ===== ПОДВАЛ ===== */
+
+footer {
+    margin-top: 50px;
+    padding: 35px 20px;
+    text-align: center;
+    background: #202020;
+    color: #ddd;
+}
+
+footer p {
+    margin: 4px;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+}
+
+/* ===== ТЕЛЕФОН ===== */
+
+@media (max-width: 700px) {
+
+    nav {
+        padding: 7px;
+    }
+
+    nav a {
+        font-size: 12px;
+        padding: 6px 8px;
+    }
+
+    .hero {
+        min-height: 450px;
+        padding: 40px 15px;
+    }
+
+    .portrait {
+        width: 120px;
+        height: 120px;
+        border-width: 4px;
+    }
+
+    .hero h1 {
+        font-size: 29px;
+    }
+
+    .hero p {
+        font-size: 15px;
+    }
+
+    main {
+        margin: 25px auto;
+        padding: 0 10px;
+    }
+
+    section:not(.hero) {
+        padding: 25px 18px;
+    }
+
+    h2 {
+        font-size: 23px;
+    }
+
+    p,
+    li {
+        font-size: 16px;
+        line-height: 1.65;
+    }
+}
