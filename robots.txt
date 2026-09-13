@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://sitenow11.github.io/Satushieva-site/sitemap.xmls
